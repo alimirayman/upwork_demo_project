@@ -8,28 +8,77 @@
           </div>
         </div>
       </div>
-      <event></event>
+      <event
+          :title="event.title"
+          :type="event.type"
+          v-for="(event, key) in events" :key="key">
+        <span slot="dateTime">{{ event.dateTime }}</span>
+        <span v-html="event.body"></span>
+      </event>
+      <event v-if="!events.length" title="Coming Soon...">
+        <span slot="dateTime">Herbstprogramm August – November</span>
+      </event>
+      <div class="moveTopButton" @click="moveTop">
+        <i class="i_pfeil_oben_pos">
+          <span class="path1"></span><span class="path2"></span>
+        </i>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import {
-    loadComponent
-  } from "../helpers/importer";
+import {
+  loadComponent
+} from '../helpers/importer'
 
-  export default {
-    data () {
-      return {
-        msg: ''
-      }
-    },
-    components: {
-      event: loadComponent('event')
+export default {
+  data () {
+    return {
+      events: [
+        {
+          type: 'konzert',
+          dateTime: 'Samstag, 17. Dezember 2017 I 20.30 – 2.00 Uhr',
+          title: 'KONZERT',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga inventore nesciunt pariatur quam quasi rem repellat sapiente voluptates? Accusantium architecto beatae dolore laborum obcaecati provident quas recusandae sed suscipit voluptatum!'
+        },
+        {
+          type: 'party',
+          dateTime: 'Samstag, 17. Dezember 2017 I 20.30 – 2.00 Uhr',
+          title: 'DJDJDJDJDJD JDJDJD JDJDJDJDJDJDJ',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga inventore nesciunt pariatur quam quasi rem repellat sapiente voluptates? Accusantium architecto beatae dolore laborum obcaecati provident quas recusandae sed suscipit voluptatum!'
+        },
+        {
+          type: 'theater',
+          dateTime: 'Samstag, 17. Dezember 2017 I 20.30 – 2.00 Uhr',
+          title: 'THEATER',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga inventore nesciunt pariatur quam quasi rem repellat sapiente voluptates? Accusantium architecto <br><br> beatae dolore laborum obcaecati provident quas recusandae sed suscipit voluptatum!'
+        },
+        {
+          type: 'lesung',
+          dateTime: 'Samstag, 17. Dezember 2017 I 20.30 – 2.00 Uhr',
+          title: 'VORLESUNG BUCHVORLESUNG VORLESUNG',
+          body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga inventore nesciunt pariatur quam quasi rem repellat sapiente voluptates? Accusantium architecto beatae dolore laborum obcaecati provident quas recusandae sed suscipit voluptatum!'
+        }
+      ]
+    }
+  },
+  components: {
+    event: loadComponent('event')
+  },
+  methods: {
+    moveTop () {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
     }
   }
+}
 </script>
 
 <style scoped lang="scss">
-
+.moveTopButton{
+  text-align: right;
+  font-size: 3rem;
+  cursor: pointer;
+}
 </style>

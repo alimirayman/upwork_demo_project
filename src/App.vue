@@ -20,6 +20,10 @@ export default {
     --transition-fast: all 0.1s ease-in-out;
     --transition-mid: all 0.3s ease-in-out;
   }
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   a {
     color: inherit;
     &:hover {
