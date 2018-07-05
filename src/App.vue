@@ -46,4 +46,32 @@ export default {
   .lead {
     font-size: 2rem;
   }
+
+  .title {
+    display: inline-block;
+    overflow-y: hidden;
+    padding: 4px 0;
+    position: relative;
+    border-left: 0.25rem solid var(--blue);
+    &:hover {
+      border-color: var(--black);
+    }
+    span {
+      display: inline;
+      background: var(--blue);
+      color: white;
+      white-space: pre-wrap;
+      padding-right: 0.25rem;
+      cursor: pointer;
+      &:hover ~ span {
+        background-color: var(--black);
+      }
+      &:first-child{
+        position: absolute;
+        top: 4px;
+        left: 0;
+        background: transparent;
+      }
+    }
+  }
 </style>
