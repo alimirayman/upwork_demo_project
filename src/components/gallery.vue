@@ -10,10 +10,19 @@
         </div>
       </div>
     </div>
+    <div class="d-flex justify-content-center">
+      <i class="i_pfeil_links_pos">
+        <span class="path1"></span><span class="path2"></span>
+      </i>
+      <i class="i_pfeil_rechts_pos">
+        <span class="path1"></span><span class="path2"></span>
+      </i>
+    </div>
   </div>
 </template>
 
 <script>
+import icon from '@/components/icon'
 export default {
   data () {
     return {
@@ -24,7 +33,32 @@ export default {
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
         {
-          url: 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2016/05/10105129/discount-codes-reach-more-people-eventbrite.png',
+          url: 'https://www.telegraph.co.uk/content/dam/news/2018/07/05/TELEMMGLPICT000168330805_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQfyf2A9a6I9YchsjMeADBa08.jpeg?imwidth=1400',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/30/photo-22142.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/65/d8/guitar_person_performance_musician_event-51334.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/aa/ef/music_festival_canon_concert_sam_live_gig_band-98787.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/ff/concert_crowd_audience_people_music_entertainment_festival_performance-727825.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9b/a0/concerts_audience_spectators_lights_stages_contestants_crowds_walkway-655277.jpg!d',
           date: '25.09.2017',
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
@@ -34,7 +68,32 @@ export default {
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
         {
-          url: 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2016/05/10105129/discount-codes-reach-more-people-eventbrite.png',
+          url: 'https://www.telegraph.co.uk/content/dam/news/2018/07/05/TELEMMGLPICT000168330805_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQfyf2A9a6I9YchsjMeADBa08.jpeg?imwidth=1400',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/30/photo-22142.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/65/d8/guitar_person_performance_musician_event-51334.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/aa/ef/music_festival_canon_concert_sam_live_gig_band-98787.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/ff/concert_crowd_audience_people_music_entertainment_festival_performance-727825.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9b/a0/concerts_audience_spectators_lights_stages_contestants_crowds_walkway-655277.jpg!d',
           date: '25.09.2017',
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
@@ -44,7 +103,32 @@ export default {
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
         {
-          url: 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2016/05/10105129/discount-codes-reach-more-people-eventbrite.png',
+          url: 'https://www.telegraph.co.uk/content/dam/news/2018/07/05/TELEMMGLPICT000168330805_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQfyf2A9a6I9YchsjMeADBa08.jpeg?imwidth=1400',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/30/photo-22142.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/65/d8/guitar_person_performance_musician_event-51334.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/aa/ef/music_festival_canon_concert_sam_live_gig_band-98787.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/ff/concert_crowd_audience_people_music_entertainment_festival_performance-727825.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9b/a0/concerts_audience_spectators_lights_stages_contestants_crowds_walkway-655277.jpg!d',
           date: '25.09.2017',
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
@@ -54,12 +138,40 @@ export default {
           text: 'ZAYK & THE FLYING TIGER CLAW'
         },
         {
-          url: 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2016/05/10105129/discount-codes-reach-more-people-eventbrite.png',
+          url: 'https://www.telegraph.co.uk/content/dam/news/2018/07/05/TELEMMGLPICT000168330805_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQfyf2A9a6I9YchsjMeADBa08.jpeg?imwidth=1400',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/30/photo-22142.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/65/d8/guitar_person_performance_musician_event-51334.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/aa/ef/music_festival_canon_concert_sam_live_gig_band-98787.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9d/ff/concert_crowd_audience_people_music_entertainment_festival_performance-727825.jpg!d',
+          date: '25.09.2017',
+          text: 'ZAYK & THE FLYING TIGER CLAW'
+        },
+        {
+          url: 'https://c.pxhere.com/photos/9b/a0/concerts_audience_spectators_lights_stages_contestants_crowds_walkway-655277.jpg!d',
           date: '25.09.2017',
           text: 'ZAYK & THE FLYING TIGER CLAW'
         }
       ]
     }
+  },
+  components: {
+    icon
   }
 }
 </script>
@@ -86,5 +198,9 @@ export default {
         opacity: 1;
       }
     }
+  }
+  i {
+    font-size: 4rem;
+    margin: 20px;
   }
 </style>

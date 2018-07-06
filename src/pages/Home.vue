@@ -45,6 +45,8 @@
       </event>
       <gallery></gallery>
     </div>
+    <lokal></lokal>
+    <media></media>
 
   </div>
 </template>
@@ -72,7 +74,8 @@ export default {
     media: loadComponent('media'),
     event: loadComponent('event'),
     gallery: loadComponent('gallery'),
-    program: loadPage('Program')
+    program: loadPage('Program'),
+    lokal: loadPage('Lokal')
   }
 }
 </script>
