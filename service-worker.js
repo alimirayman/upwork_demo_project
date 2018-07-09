@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.1b4fd1d5232ebd091ba3367fc47ccaa9.js"
+  "/precache-manifest.d6548feb6859a78f15737403dbf90abe.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "smoke-app"});
+workbox.core.setCacheNameDetails({prefix: "demo-project"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
