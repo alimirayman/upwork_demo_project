@@ -8,7 +8,8 @@ const homePaths = [
 ]
 
 const views = [
-  createRoute('/', 'Home', homePaths)
+  createRoute('/', 'Home', homePaths),
+  createRoute('/impressum', 'Impressum')
 ]
 
 export const routes = [

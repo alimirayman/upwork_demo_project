@@ -1,17 +1,18 @@
 <template>
-  <div class="media mt-3 mb-5">
+  <div class="media">
     <div class="img-container" :style="{'background-image': 'url(' + images[curId] + ')'}"></div>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    images: {
+      required: true
+    }
+  },
   data () {
     return {
-      images: [
-        'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2016/05/10105129/discount-codes-reach-more-people-eventbrite.png',
-        'https://15xomi2v386wytrb8nbsoq34-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/event-management.jpg'
-      ],
       curId: 0
     }
   },

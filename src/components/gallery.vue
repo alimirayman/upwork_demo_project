@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="galary">
     <div class="row mt-5">
-      <div class="col-lg-3 col-md-4 col-sm-6" v-for="(image, key) in images" :key="key">
+      <div class="col-lg-3 col-md-4 col-sm-6" v-for="(image, key) in limImages[cur]" :key="key">
         <div class="img-container mb-4" :style="{'background-image' : `url(${image.url})`}">
           <div class="overlay p-4">
             <span>{{ image.date }}</span>
@@ -11,10 +11,10 @@
       </div>
     </div>
     <div class="d-flex justify-content-center">
-      <i class="i_pfeil_links_pos">
+      <i class="i_pfeil_links_pos" @click="prevImages">
         <span class="path1"></span><span class="path2"></span>
       </i>
-      <i class="i_pfeil_rechts_pos">
+      <i class="i_pfeil_rechts_pos" @click="nextImages">
         <span class="path1"></span><span class="path2"></span>
       </i>
     </div>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import _ from 'lodash'
 import icon from '@/components/icon'
 export default {
   data () {
@@ -167,16 +168,32 @@ export default {
           date: '25.09.2017',
           text: 'ZAYK & THE FLYING TIGER CLAW'
         }
-      ]
+      ],
+      cur: 0
+    }
+  },
+  computed: {
+    limImages () {
+      return _.chunk(this.images, 12)
     }
   },
   components: {
     icon
+  },
+  methods: {
+    nextImages () {
+      this.cur = (++this.cur === this.limImages.length) ? 0 : this.cur
+    },
+    prevImages () {
+      this.cur = (--this.cur === -1) ? this.limImages.length - 1 : this.cur
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
+  $grid-columns: 12;
+  @import '../../node_modules/bootstrap/scss/bootstrap.scss';
   .img-container {
     width: 100%;
     height: 250px;
@@ -202,5 +219,6 @@ export default {
   i {
     font-size: 4rem;
     margin: 20px;
+    cursor: pointer;
   }
 </style>

@@ -3,8 +3,8 @@
     <cover :videoSrc="video" :poster="poster" />
     <!--<router-view></router-view>-->
     <program></program>
-    <media></media>
-    <div class="container">
+    <media :images="loopImages" class="mt-3 mb-5"></media>
+    <div id="tickets" class="container">
       <event title="TICKETS" type="tickets">
 
         <div class="font_display">
@@ -46,8 +46,12 @@
       <gallery></gallery>
     </div>
     <lokal></lokal>
-    <media></media>
-
+    <media :images="loopImages" class="mt-3 mb-5"></media>
+    <div class="container">
+      <credits></credits>
+    </div>
+    <media :images="mapImage"></media>
+    <foot></foot>
   </div>
 </template>
 
@@ -66,7 +70,12 @@ export default {
   data () {
     return {
       video,
-      poster
+      poster,
+      loopImages: [
+        'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2016/05/10105129/discount-codes-reach-more-people-eventbrite.png',
+        'https://15xomi2v386wytrb8nbsoq34-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/event-management.jpg'
+      ],
+      mapImage: ['http://www.uwgb.edu/UWGBCMS/media/Maps/images/map-icon.jpg']
     }
   },
   components: {
@@ -74,6 +83,8 @@ export default {
     media: loadComponent('media'),
     event: loadComponent('event'),
     gallery: loadComponent('gallery'),
+    credits: loadComponent('credits'),
+    foot: loadComponent('footer'),
     program: loadPage('Program'),
     lokal: loadPage('Lokal')
   }

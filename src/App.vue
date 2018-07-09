@@ -10,10 +10,10 @@ export default {
 </script>
 
 <style lang="scss">
+  $grid-columns: 10;
   @import '../node_modules/bootstrap/scss/bootstrap.scss';
   @import url('https://fonts.googleapis.com/css?family=Bungee|Raleway:400i,600i');
   @import './static/icons/style.css';
-
   :root {
     --blue: #7ca7ad;
     --black: #222;
@@ -45,6 +45,19 @@ export default {
 
   .lead {
     font-size: 2rem;
+  }
+
+  .title_tag {
+    div {
+      display: inline-block;
+    }
+    .icon {
+      font-size: 3.3rem;
+      margin-right: 20px;
+    }
+    .title {
+      font-size: 2rem;
+    }
   }
 
   .title {
