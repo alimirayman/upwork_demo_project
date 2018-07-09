@@ -1,0 +1,2 @@
+webpackJsonp([13],{"6B6W":function(e,t,l){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(){var e=this,t=e.$createElement,l=e._self._c||t;return l("div",[l("router-view")],1)},u=[],r=l("XyMi"),c=null,i=!1,a=null,o=null,s=null,f=Object(r["a"])(c,n,u,i,a,o,s);t["default"]=f.exports}});
+//# sourceMappingURL=13.fac35420.js.map

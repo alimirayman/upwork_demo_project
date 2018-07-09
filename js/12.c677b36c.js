@@ -1,0 +1,2 @@
+webpackJsonp([12],{c5Mg:function(e,t,l){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},u=[function(){var e=this,t=e.$createElement,l=e._self._c||t;return l("div",{staticClass:"about"},[l("h1",[e._v("You are at the eclipse")])])}],a=l("XyMi"),c=null,r=!1,s=null,i=null,o=null,_=Object(a["a"])(c,n,u,r,s,i,o);t["default"]=_.exports}});
+//# sourceMappingURL=12.c677b36c.js.map
